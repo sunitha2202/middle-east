@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+}
+
+body {
+  font-family: 'Blinker', sans-serif;
+  position: relative;
+  
+  
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* global */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 19px;
+
+}
+.grid-container {
+  display: grid;
+  width: 648px;
+  height: 410px;
+  gap: 1.3rem;
+  margin-top: 1.3rem;
+}
+
+.home-container {
+  padding-top: 12rem;
+  margin-top: 1.5%;
+}
+
+.featured {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.main-description {
+  position: absolute;
+  top: 13rem;
+  left: 2rem;
+  color: white;
+  font-size: small;
+  font-weight: lighter;
+  background-color: rgb(31, 31, 31);
+  padding: 5px;
+}
+
+.title{
+  position: absolute;
+  top: 17rem;
+  left: 2rem;
+  color: white;
+  font-size: medium;
+  font-weight:4px;
+  padding: 5px;
+}
+
+
+
+
+.title:hover{
+  color:rgb(35, 34, 34);
+  transition: all 0.5s ease;
+}
+
+.featured img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.grid-one {
+  grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.grid-two {
+  grid-area: two;
+  grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid-three {
+  grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.grid-four{
+  grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.lil-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in;
+}
+
+.lil-overlay:after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+  
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+/*---
+  hover trigger
+---*/
+
+.lil-overlay:hover:after {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+
+/*---
+  active state
+---*/
+
+.lil-overlay:active:after {
+  opacity: 0;
+}
+
+/*--------------------------------
+				END ICON SHINE
+---------------------------------*
+
+
+
+
+/* global */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 19px;
+}
+.grid-container {
+  display: grid;
+  height: 50rem;
+  grid-template: auto auto auto auto;
+  grid-template-areas: "one two" "three four";
+  gap: 1.3rem;
+  margin-top: 1.3rem;
+}

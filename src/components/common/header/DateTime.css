@@ -1,0 +1,12 @@
+.dateTime{
+    display: inline-flex;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align: right;
+    align-items: center;
+    min-height: 40px;
+    justify-content: space-between;
+    /* background-color: #000; */
+
+    }
+   

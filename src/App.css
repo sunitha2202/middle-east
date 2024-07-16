@@ -1,0 +1,40 @@
+.app {
+      width: 100vw;
+   
+  } 
+  h1{
+    font-size: 2.5em;
+  }
+  /* App.css */
+/* navbar {
+  background-color: white;
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: red;
+}
+ */
+
+body{
+  /* background-color: #f1ecec; */
+}

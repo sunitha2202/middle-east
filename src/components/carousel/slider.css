@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  margin: 20px,20px;
+}
+
+/* :root {
+  --heights: 55vh;
+  --widths:80vh;
+} */
+
+.slider-container {
+  height: 30%;
+  width:50%;
+  position: absolute;
+  margin: auto;
+  right: 22.5%;
+  bottom: 1rem;
+  margin-top: 3rem;
+  
+
+}
+
+.active {
+  display: inline-block;
+}
+
+.inactive {
+  display: none;
+}
+
+.slides {
+  height: var(--heights);
+  width: var(--widths);
+  position: relative;
+
+ 
+}
+.slide-image {
+  width: 648px;
+  height: 500px;
+  position: absolute;
+  object-fit: cover;
+
+}
+.slide-title{
+  color: white;
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  bottom: 1%;
+  left: 2rem;
+  cursor: pointer;
+}
+
+.slide-text{
+  font-size: medium;
+  color:white;
+  align-items: center;
+  bottom: -10%;
+  position: absolute;
+  z-index: 10;
+  margin: 5x;
+  left: 2rem;
+  
+
+}
+
+.heading:hover{
+  color: rgb(61, 61, 61);
+  transition: all 0.5s ease;
+}
+
+
+.prev,
+.next {
+  color:white;
+  cursor: pointer;
+  z-index: 100;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  padding: 0.5rem;
+  margin-top: -3rem;
+  font-size: 20px;
+  font-weight: lighter;
+  border-radius: 0px 5px 5px 0px;
+  margin-left: 20px;
+  margin-right: -26px;
+  border-style: double;
+}
+
+
+.slider-container:hover .prev:hover,
+.slider-container:hover .next:hover {
+  color: white; 
+  transition: all 0.5s ease;
+}
+
+.next {
+  right: 0;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.slides:after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+  
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+/*---
+  hover trigger
+---*/
+
+.slides:hover:after {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+
+/*---
+  active state
+---*/
+
+.sliders:active:after {
+  opacity: 0;
+}
+
+/*--------------------------------
+				END ICON SHINE
+---------------------------------*/
+
+
+
+
+.slide-category{
+position: absolute;
+bottom: 9rem;
+left: 3rem;
+color: white;
+font-size: small;
+font-weight: lighter;
+background-color: rgb(31, 31, 31);
+padding: 5px;
+cursor: pointer;
+}
+
+.moment{
+  position: absolute;
+bottom: 9rem;
+left: 15rem;
+color: white;
+font-size: small;
+font-weight: lighter;
+padding: 5px;
+
+}
+
+.moment::before{
+  content: "\1F556"; 
+  font-size: small;
+}
+
+/* card style */
+.highlight{
+  height: var(--heights);
+  width: var(--widths);
+  position: relative;
+  margin: auto;
+  display: block;
+  left:60rem;
+  top:-135%;
+  margin-left: 3.5rem;
+  
+}
+

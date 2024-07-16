@@ -1,0 +1,79 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+.top-header{
+    background: #27272a;
+    height: 50px;
+    }
+    .top-header .top-date-time {
+        flex: 0 1 30%;
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        align-items: center;
+        line-height: 14px;
+    }
+    .top-date-time .time {
+        padding-left: 10px;
+    }
+    .slick-prev.slick-arrow {
+        right: 30px;
+    }
+     
+.head {
+    cursor: pointer;
+    display: block;
+
+  }
+  .head .logo img {
+    width: 500px;
+    align-items: center;
+  }
+  .second-head{
+    padding-top: 50px;
+    font-size: 16px;
+  }
+.singleCol{
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+.social-icons-wrap a{ 
+color :#000;
+    font-size: 16px;
+}
+.social-icons-wrap{
+    flex:0 1 25%;
+}
+.social-icons-wrap .social-icon{
+    color: #525252;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0px 4px;
+}
+.social-icons-wrap .social-icon:hover {
+color: #27272a;
+}
+.header-right-button-wrap{
+    flex:0 1 25%;
+    text-align: end;
+    padding: 0 5px;
+}
+.header-right-button-wrap span.title-text{
+    font-family: sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #525252;
+    padding-top: 100px;
+}
+span.title-text:hover{
+color: #27272a;
+
+}
+.header-right-button-wrap > div >a{
+    text-decoration: none;
+
+}
